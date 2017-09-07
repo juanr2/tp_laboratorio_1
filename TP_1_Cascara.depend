@@ -22,3 +22,15 @@
 1504380645 source:c:\users\i\desktop\tp_1_cascara - copia\funciones.c
 	<stdio.h>
 
+1504824140 source:c:\users\i\desktop\correccion\funciones.c
+	<stdio.h>
+
+1504824592 source:c:\users\i\desktop\correccion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<conio.h>
+	<string.h>
+
+1504821263 c:\users\i\desktop\correccion\funciones.h
+

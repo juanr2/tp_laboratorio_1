@@ -6,17 +6,32 @@
  * \return el valor del número que recibe
  *
  */
-float funcionCargar()
-{
+int funcionValidar(char str[]){
+    int i=0;
 
-    float num;
+    while(str[i]!='\0'){
 
-    printf("Ingrese el operando correspondiente: ");
-    scanf("%f",&num);
 
-    return num;
+
+        if((str[i]<'0'||str[i]>'9')&&(str[i]!='.'))
+
+
+
+            return 0;
+            i++;
+
+
+    }
+
+return 1;
+
+
+
 
 }
+
+
+
 
 /** \brief recibe dos numeros y calcula la suma
  *
@@ -70,7 +85,7 @@ float funcionResta (float num1,float num2){
 
 funcionDivision(float num1,float num2){
 
-int result;
+float result;
 
 if (num2==0){
 

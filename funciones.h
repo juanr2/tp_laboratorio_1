@@ -1,7 +1,7 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-float funcionCargar();
+int funcionValidar(char[]);
 float funcionSuma(float, float);
 float funcionResta (float,float);
 funcionDivision(float,float);

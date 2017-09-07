@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "funciones.h"
 #include <conio.h>
+#include <string.h>
 
 
 
@@ -9,10 +10,11 @@
 int main()
 {
     char opcion;
-    int intOption;
+    int intOption,i;
     char seguir='s';
     int flagOp1=0,flagOp2=0,r;
     float primerOperando=0, segundoOperando=0;
+    char str[100];
 
     printf("\n\n***********************CALCULADORA***********************\n\n");
     while(seguir=='s')
@@ -47,111 +49,150 @@ int main()
         switch(opcion)
         {
         case '1':
-            primerOperando=funcionCargar();
-            flagOp1=1;
 
 
-            break;
-        case '2':
 
-            segundoOperando=funcionCargar();
-            flagOp2=1;
+            printf("INGRESE EL PRIMER OPERANDO:");
+            fflush(stdin);
+            scanf("%s",str);
 
-            break;
-        case '3':
-            r=funcionFlag(flagOp1,flagOp2);
-
-            if(r==1)
+            while(funcionValidar(str)==0)
             {
 
-                printf("\nLa suma entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionSuma(primerOperando,segundoOperando));
-
-
+                printf("ERROR: EL VALOR CARGADO NO CORRESPONDE A UN NUMERO\n");
+                printf("CARGUE UN NUEVO NUMERO: ");
+                fflush(stdin);
+                scanf("%s",str);
             }
-            system("pause");
-            break;
-        case '4':
 
-            r=funcionFlag(flagOp1,flagOp2);
+            printf("CARGA EXITOSA");
 
-            if(r==1)
+
+            fflush(stdin);
+            primerOperando=atof(str);
+
+        flagOp1=1;
+
+
+        break;
+    case '2':
+            printf("INGRESE EL SEGUNDO OPERANDO:");
+            fflush(stdin);
+            scanf("%s",str);
+
+            while(funcionValidar(str)==0)
             {
 
-
-                printf("\nLa resta entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionResta(primerOperando,segundoOperando));
-
+                printf("ERROR: EL VALOR CARGADO NO CORRESPONDE A UN NUMERO\n");
+                printf("CARGUE UN NUEVO NUMERO: ");
+                fflush(stdin);
+                scanf("%s",str);
             }
 
-            system("pause");
-            break;
-        case '5':
-
-            r=funcionFlag(flagOp1,flagOp2);
-
-            if(r==1)
-            {
-
-                funcionDivision(primerOperando,segundoOperando);
-
-            }
-
-            system("pause");
-            break;
-        case '6':
-            r=funcionFlag(flagOp1,flagOp2);
-
-            if(r==1)
-            {
-
-                printf("\nLa multiplicacion entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionMultiplicacion(primerOperando,segundoOperando));
-            }
-            system("pause");
-            break;
-        case '7':
-
-            if(flagOp1==1)
-            {
-                printf("el factorial es : %d\n",funcionFactorial(primerOperando));
-            }
-            else
-            {
-
-                printf("Error: debe cargar un valor para el operador uno");
-            }
+            printf("CARGA EXITOSA");
 
 
-            system("pause");
-            break;
-        case '8':
-            r=funcionFlag(flagOp1,flagOp2);
+            fflush(stdin);
+            segundoOperando=atof(str);
 
-            if(r==1)
-            {
-                printf("\nLa suma entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionSuma(primerOperando,segundoOperando));
-                printf("\nLa resta entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionResta(primerOperando,segundoOperando));
-                funcionDivision(primerOperando,segundoOperando);
-                printf("\nLa multiplicacion entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionMultiplicacion(primerOperando,segundoOperando));
 
-            }
-            if(flagOp1==1)
-            {
-                printf("el factorial es : %d\n",funcionFactorial(primerOperando));
-            }
-            else
-            {
+        flagOp2=1;
 
-                printf("Error: el factorial no se puede calcular porque debe cargar un valor para el operador uno");
-            }
-            system("pause");
-            break;
-        case '9':
-            seguir = 'n';
-            break;
+        break;
+    case '3':
+        r=funcionFlag(flagOp1,flagOp2);
+
+        if(r==1)
+        {
+
+            printf("\nLa suma entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionSuma(primerOperando,segundoOperando));
+
+
         }
-        system("cls");
+        system("pause");
+        break;
+    case '4':
 
+        r=funcionFlag(flagOp1,flagOp2);
+
+        if(r==1)
+        {
+
+
+            printf("\nLa resta entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionResta(primerOperando,segundoOperando));
+
+        }
+
+        system("pause");
+        break;
+    case '5':
+
+        r=funcionFlag(flagOp1,flagOp2);
+
+        if(r==1)
+        {
+
+            funcionDivision(primerOperando,segundoOperando);
+
+        }
+
+        system("pause");
+        break;
+    case '6':
+        r=funcionFlag(flagOp1,flagOp2);
+
+        if(r==1)
+        {
+
+            printf("\nLa multiplicacion entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionMultiplicacion(primerOperando,segundoOperando));
+        }
+        system("pause");
+        break;
+    case '7':
+
+        if(flagOp1==1)
+        {
+            printf("el factorial es : %d\n",funcionFactorial(primerOperando));
+        }
+        else
+        {
+
+            printf("Error: debe cargar un valor para el operador uno");
+        }
+
+
+        system("pause");
+        break;
+    case '8':
+        r=funcionFlag(flagOp1,flagOp2);
+
+        if(r==1)
+        {
+            printf("\nLa suma entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionSuma(primerOperando,segundoOperando));
+            printf("\nLa resta entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionResta(primerOperando,segundoOperando));
+            funcionDivision(primerOperando,segundoOperando);
+            printf("\nLa multiplicacion entre %f y %f es : %f\n\n",primerOperando,segundoOperando,funcionMultiplicacion(primerOperando,segundoOperando));
+
+        }
+        if(flagOp1==1)
+        {
+            printf("el factorial es : %d\n",funcionFactorial(primerOperando));
+        }
+        else
+        {
+
+            printf("Error: el factorial no se puede calcular porque debe cargar un valor para el operador uno");
+        }
+        system("pause");
+        break;
+    case '9':
+        seguir = 'n';
+        break;
     }
-    return 0;
+    system("cls");
+
+}
+return 0;
 
 }
 
