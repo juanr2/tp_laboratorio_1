@@ -34,3 +34,15 @@
 
 1504821263 c:\users\i\desktop\correccion\funciones.h
 
+1504828854 source:c:\users\i\desktop\correccion2\funciones.c
+	<stdio.h>
+
+1504829053 source:c:\users\i\desktop\correccion2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<conio.h>
+	<string.h>
+
+1504828854 c:\users\i\desktop\correccion2\funciones.h
+

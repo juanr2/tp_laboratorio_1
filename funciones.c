@@ -1,15 +1,17 @@
 #include<stdio.h>
 
-/** \brief recibe un número y lo carga
+/** \brief recibe una cadena char y verifica si contiene solo numeros.
  *
- * \param num es el numero que recibe la función.
- * \return el valor del número que recibe
+ * \param str es una cadena char
+ * \return 0 si la cadena char tiene otros caracteres además de numeros y 1 si contiene solo numeros
  *
  */
-int funcionValidar(char str[]){
+int funcionValidar(char str[])
+{
     int i=0;
 
-    while(str[i]!='\0'){
+    while(str[i]!='\0')
+    {
 
 
 
@@ -18,20 +20,16 @@ int funcionValidar(char str[]){
 
 
             return 0;
-            i++;
+        i++;
 
 
     }
 
-return 1;
-
+    return 1;
 
 
 
 }
-
-
-
 
 /** \brief recibe dos numeros y calcula la suma
  *
@@ -43,13 +41,14 @@ return 1;
 
 
 
-float funcionSuma(float num1, float num2){
+float funcionSuma(float num1, float num2)
+{
 
-float result;
+    float result;
 
-result=num1+num2;
+    result=num1+num2;
 
-return result;
+    return result;
 
 }
 
@@ -63,7 +62,8 @@ return result;
  *
  */
 
-float funcionResta (float num1,float num2){
+float funcionResta (float num1,float num2)
+{
 
     float result;
 
@@ -75,42 +75,26 @@ float funcionResta (float num1,float num2){
 
 }
 
-/** \brief recibe dos valores , calcula la division, en caso que el divisor sea 0, imrime el error, finalmente imprime por pantalla el resultado
- *
+/** \brief recibe dos valores , calcula la division.
  * \param num1 numero cargado por el usuario.
  * \param num2 segundo numero cargado por el usuario
- * \return no retorna ningún valor
+ * \return el valor result que corresponde al resultado.
  *
  */
 
-funcionDivision(float num1,float num2){
+float funcionDivision(float num1,float num2)
+{
 
-float result;
+    float result;
 
-if (num2==0){
 
-    printf("ERROR: EL DIVISOR NO PUEDE SER IGUAL A CERO\n");
-    printf("Por favor: cambie el valor del segundo operando y vuelva a realizar la operacion\n  ");
-
-}
-else{
     result=num1/num2;
-    printf("El resultado de la division es: %f",result);
 
-    return 0;
+
+    return result;
 }
 
 
-
-
-
-
-
-
-
-
-
-}
 
 /** \brief recibe dos numero y calcula el producto de ambos
  *
@@ -121,9 +105,10 @@ else{
  *
  */
 
-float funcionMultiplicacion(float num1,float num2){
+float funcionMultiplicacion(float num1,float num2)
+{
 
-    int result;
+    float result;
 
     result=num1*num2;
 
@@ -141,20 +126,22 @@ float funcionMultiplicacion(float num1,float num2){
  *
  */
 
-int funcionFactorial(int num){
+long int funcionFactorial(int num)
+{
 
-int factorial=1;
-int i;
+    int factorial=1;
+    int i;
 
-for(i=num;i>0;i--){
+    for(i=num; i>0; i--)
+    {
 
-   factorial=factorial*i;
+        factorial=factorial*i;
 
-}
+    }
 
 
 
-return factorial;
+    return factorial;
 
 }
 
@@ -167,20 +154,23 @@ return factorial;
  *
  */
 
-int funcionFlag(int banderaUno,int banderaDos){
+int funcionFlag(int banderaUno,int banderaDos)
+{
 
     int retorno=0;
-    if(banderaUno==1&&banderaDos==1){
+    if(banderaUno==1&&banderaDos==1)
+    {
 
         retorno=1;
     }
-    else{
+    else
+    {
 
-    printf("ERROR: DEBE CARGAR DOS OPERADORES\n ");
+        printf("ERROR: DEBE CARGAR DOS OPERADORES\n ");
 
     }
 
-return retorno;
+    return retorno;
 
 }
 
