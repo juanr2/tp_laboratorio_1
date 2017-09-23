@@ -27,7 +27,7 @@ int i=0;
 
 while(validar[i]!='\0'){
 
-    if((validar[i]<'a'||validar[i]>'z')&&(validar[i]<'A'||validar[i]>'Z')&&(validar[i]!='\n'))
+    if((validar[i]<'a'||validar[i]>'z')&&(validar[i]<'A'||validar[i]>'Z')&&(validar[i]!='\n')&&(validar[i]!=' '))
 
         return 0;
 
@@ -155,13 +155,24 @@ void funcionImprimirOrdenados(EPersona pers[],int cant){
  int i=0;
 
 
+
             for(i=0; i<cant; i++)
             {
+                if(pers[i].estado==1){
 
-                printf("%s\t", pers[i].nombre );
+                    if((strlen(pers[i].nombre))<8)
+                {
+                    printf("%s\t\t\t", pers[i].nombre );
+                }
+                else{
+                 printf("%s\t\t", pers[i].nombre );
+                }
+
                 printf("%d\t", pers[i].edad );
                 printf("%d\t", pers[i].estado );
                 printf("%d\n", pers[i].dni );
+                }
+
 
 
 
