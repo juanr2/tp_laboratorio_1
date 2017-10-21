@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1508428315 source:c:\users\i\desktop\tp_3_cascara\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508428315 c:\users\i\desktop\tp_3_cascara\funciones.h
+
+1508381900 source:c:\users\i\desktop\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508428315 source:c:\users\i\desktop\tp_3_cascara - copiafail!!!!\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508428315 c:\users\i\desktop\tp_3_cascara - copiafail!!!!\funciones.h
+
+1508381900 source:c:\users\i\desktop\tp_3_cascara - copiafail!!!!\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508447094 source:c:\users\i\desktop\tp_3_cascara - copiafail!!!! - copia22\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508447094 c:\users\i\desktop\tp_3_cascara - copiafail!!!! - copia22\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1508446089 source:c:\users\i\desktop\tp_3_cascara - copiafail!!!! - copia22\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508454803 source:c:\users\i\desktop\tp_3_cascara - backup\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508454413 c:\users\i\desktop\tp_3_cascara - backup\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1508456066 source:c:\users\i\desktop\tp_3_cascara - backup\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508470040 source:c:\users\i\desktop\tp_3_cascara - backup - 2\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508467243 c:\users\i\desktop\tp_3_cascara - backup - 2\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1508463510 source:c:\users\i\desktop\tp_3_cascara - backup - 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508463510 source:c:\users\i\desktop\tp_3_cascara - backup -\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508467243 c:\users\i\desktop\tp_3_cascara - backup -\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1508472122 source:c:\users\i\desktop\tp_3_cascara - backup -\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508553313 source:c:\users\i\desktop\tp_3_cascara - backup -4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1508553587 c:\users\i\desktop\tp_3_cascara - backup -4\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1508553787 source:c:\users\i\desktop\tp_3_cascara - backup -4\funciones.c
+	<string.h>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
